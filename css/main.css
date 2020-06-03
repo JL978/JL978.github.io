@@ -43,3 +43,23 @@ h1{
 .nav-link{
     margin-right: 5vw;
 }
+
+@media (max-width: 450px){
+    nav{
+        flex-direction: column;
+    }
+    h1{
+        margin: 0;
+        margin-top: 2vh;
+    }
+    .nav-link{
+        margin: 0;
+    }
+    ul{
+        padding: 0;
+        text-align: center;
+    }
+    li{
+        margin: 4vw;
+    }
+}
