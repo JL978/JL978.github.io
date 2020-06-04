@@ -1,10 +1,17 @@
 ---
 layout: default
-title: Jimmy Lam's Blog
----
-	<h1 class="blog-title">{{ page.title }}</h1>
-	<ul class="posts">
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+title: My Blog
+---    
+<h1 class="blog-title"><a class= 'title-link'href="/blog">{{ page.title }}</a></h1>
+<ul class="posts">
+    {% for post in site.posts %}
+        <li>
+            <h2><a class='post-title' href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+            <small class='date'>{{ post.date | date_to_string }}</small>
+            <div class="post-content">
+                <p>{{post.excerpt}}</p>
+                <a href="{{ post.url }}" class="read-more">Read More >></a>
+            </div>
+        </li>
+    {% endfor %}
+</ul>
