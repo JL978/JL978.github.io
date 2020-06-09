@@ -121,12 +121,29 @@ h2{
 .date{
     opacity: 50%;
     font-style: italic;
+    margin-left: var(--margin-l)
 }
 
 .post-content{
     width: 65%;
     line-height: 1.75;
 }
+
+
+.blog-post-title{
+    text-decoration: none;
+    color: var(--background-color);
+    text-wrap: wrap;
+    margin-left: var(--margin-l) ;
+}
+
+.post{
+    margin: 0 var(--margin-l);
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
 @media (max-width: 700px){
     nav{
         flex-direction: column;
